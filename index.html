@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Hello! I'm (your name), a passionate web developer with experience in building dynamic and responsive web applications. I specialize in front-end development and have a keen interest in user experience design. I enjoy solving complex problems and constantly seek to learn new technologies and improve my skills.</p>
+        <p>With a background in computer science and years of hands-on experience, I bring a unique blend of creativity and technical expertise to every project. Whether it's designing a beautiful user interface or implementing complex functionality, I strive to deliver high-quality solutions that meet the needs of my clients.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One</h3>
+            <img src="project1.jpg" alt="Project One">
+            <p>This is a brief description of Project One. It showcases the skills and technologies used to create this project.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <img src="project2.jpg" alt="Project Two">
+            <p>This is a brief description of Project Two. It highlights the key features and the impact of the project.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project Three</h3>
+            <img src="project3.jpg" alt="Project Three">
+            <p>This is a brief description of Project Three. It demonstrates the technology stack and the challenges overcome during development.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please fill out the contact form below or reach out to me via email.</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // JavaScript for form submission or other interactivity
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+            // Implement form submission logic here
+        });
+    </script>
+</body>
+</html>
